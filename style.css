@@ -7,24 +7,20 @@
 }
 
 #Logo-Title {
-    display: inline!important;
+    display: inline-flex;
     align-items: center;
     margin-top: 10px;
 }
 
 #Logo {
-    display: inline!important;
     flex-shrink: 0;
     background: #ffffff;
-    float: left;
-
+    margin: 0; /* remove any default margins */
 }
 
 #Title {
-    display: inline!important;
     height: 100px;
-    float: left;
     line-height: normal;
     margin-left: 17px;
-    margin-top: 10px;
+    margin-top: 0; /* set top margin to 0 to ensure alignment */
 }
