@@ -1,0 +1,30 @@
+.container {
+    max-width: 1200px;
+    min-width: 1000px;
+    width: 80vw;
+    margin: auto;
+    padding: 0 16px;
+}
+
+#Logo-Title {
+    display: inline!important;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#Logo {
+    display: inline!important;
+    flex-shrink: 0;
+    background: #ffffff;
+    float: left;
+
+}
+
+#Title {
+    display: inline!important;
+    height: 100px;
+    float: left;
+    line-height: normal;
+    margin-left: 17px;
+    margin-top: 10px;
+}
