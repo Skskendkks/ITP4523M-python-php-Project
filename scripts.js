@@ -4,3 +4,5 @@ function loadTemplate(element, templateUrl) {
       .then((template) => document.querySelectorAll(element)[0].innerHTML = template);
   }
   loadTemplate("header", "template/header.html");
+  loadTemplate("nav","template/nav.html");
+  loadTemplate("footer","template/footer.html");
