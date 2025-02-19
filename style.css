@@ -12,25 +12,24 @@ body {
 }
 
 #Logo-Title {
-    display: inline-flex;
-    align-items: center;
+    display: flex!important;
+    align-items: flex-start; /* Align items to the start (top) */
     margin-top: 10px;
 }
 
 #Logo {
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
     background: #ffffff;
-    margin: 0; /* remove any default margins */
 }
 
 #Title {
-    height: 100px;
-    line-height: normal;
     margin-left: 17px;
-    margin-top: 0; /* set top margin to 0 to ensure alignment */
+    margin-top: 0; /* Adjust top margin if needed */
 }
 
-.yellow-btn {
+.btn {
     border: none;
     border-radius: 10px;
     background: #FFF06E;

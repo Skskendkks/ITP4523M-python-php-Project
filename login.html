@@ -11,23 +11,35 @@
 
 <body>
     <div class="container">
-    <form>
-        <h1>Login</h1>
-        <input type="radio" name="userType" value="customer" required> Customer
-        <input type="radio" name="userType" value="staff" required> Staff<br>
-        <p> User name: <input type="text" name="username" required><br>
-        Password: <input type="password" name="password" required>
-        </p>
-        <button type="submit" class="ytn">Login</button>
-        <button type="reset" style="margin-left: 16px">Reset</button></br>
-        <p>
-        <a href="register.html" style="margin-left: 16px">Register</a>
-        <a href="forgotPW.html" style="margin-left: 16px">Forgot Password</a>
-        </p>
-    </form>
-</div>
+        <form>
+            <h1>Login</h1>
+            <table>
+                <tr>
+                    <td><label for="userType">User Type:</label></td>
+                    <td><input type="radio" name="userType" value="customer" required> Customer</td>
+                    <td><input type="radio" name="userType" value="staff" required> Staff</td>
+                </tr>
+                <tr>
+                    <td><label for="username">User name:</label></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="ytn">Login</button></td>
+                    <td><button type="reset" style="margin-left: 16px">Reset</button></br></td>
+                </tr>
+                <tr>
+                    <td><a href="register.html" style="margin-left: 16px">Register</a></td>
+                    <td><a href="forgotPW.html" style="margin-left: 16px">Forgot Password</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 <footer></footer>
-
+<script src="scripts.js"></script>
 
 </html>
