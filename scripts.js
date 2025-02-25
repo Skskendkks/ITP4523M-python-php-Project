@@ -3,6 +3,6 @@ function loadTemplate(element, templateUrl) {
       .then((response) => response.text())
       .then((template) => document.querySelectorAll(element)[0].innerHTML = template);
   }
-  loadTemplate("header", "template/header.html");
-  loadTemplate("nav","template/nav.html");
-  loadTemplate("footer","template/footer.html");
+  loadTemplate("header", "./template/header.html");
+  loadTemplate("nav","./template/nav.html");
+  loadTemplate("footer","./template/footer.html");
