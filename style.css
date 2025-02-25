@@ -1,19 +1,20 @@
 body {
     font-family: Calibri;
     margin: 0;
+    height: auto;
 }
 
 .head-wrapper {
     position: fixed;
-    height: 120px;
     z-index: 10;
-    background-color: rgba(76, 143, 211, 1);
+    height: 9rem;
     width: 100%;
     display: block;
+    background-color: rgba(76, 143, 211, 1);
 }
 
 .header-container {
-    height: 30px;
+    height: 3rem;
     background-color: rgba(4, 9, 41, 1);
     color: white;
     align-content: center;
@@ -21,62 +22,69 @@ body {
 }
 
 .nav-container {
+    height: 6rem;
     display: flex;
-    height: 90px;
+    align-items: center;
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .nav-layer {
-    background-color: aquamarine;
-    display: block;
-    height: 90px;
     width: 100%;
+    height: 90px;
+    display: block;
 }
 
 .nav-sublayer {
-    align-items: center;
+    height: 3rem;
     display: flex;
-    height: 45px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content {
     background-color: white;
     position: relative;
-    top: 120px;
 }
 
-#logo {
+.nav-left {
+    height: 3rem;
     display: flex;
     align-items: center;
 }
 
-.btn {
-    
-    border: none;
-    border-radius: 10px;
-    background: #FFF06E;
-    min-width: 100px;
-    height: 45px;
-    padding: 0 16px;
-    cursor: pointer;
-    color: #000 !important;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    text-wrap: nowrap;
-    /* display: inline-block; */
-    line-height: 36px;
-    text-decoration: none;
-    box-sizing: unset;
+h3 {
+    font-size: 1.8rem;
+    color: white;
 }
 
+.nav-right .btn {
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 16px;
+    cursor: pointer;
+}
 
+.btn:hover {
+    background-color: #376ba3;
+}
 
+section {
+    top: 9rem;
+    position: relative;
+}
 
-.container {
-    /* max-width: 1200px;
-    min-width: 1000px;
-    width: 80vw;
-    margin: auto;
-    padding: 0 16px; */
+.background-photo {
+    width: 100%
 }
