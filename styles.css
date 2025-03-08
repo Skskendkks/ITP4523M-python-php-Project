@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Calibri;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 1208px;
+}
+
+header {
+    height: auto;
+    background-color: rgba(4, 9, 41, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 100%;
+}
+
+header .logo img {
+    width: 6rem;
+    height: 6rem;
+}
+
+header .headline {
+    margin-left: 10px;
+    white-space: nowrap;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+header .headline h2, .headline h3 {
+    margin: 5px;
+}
+
+header .headline h3 {
+    font-style: italic;
+}
+
+header .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+header .btn a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+header .btn a:hover {
+    background-color: darkgrey;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: blue;
+    width: 100%;
+    min-width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.background-photo {
+    width: 100%;
+    height: 400px;
+}
