@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Place Orders | Smile & Sunshine</title>
+    </head>
+
+    <body>
+
+        <header></header>
+        <nav></nav>
+
+        <form id="order-form">
+
+            <div class="horizontal-content">
+
+                <section class="searcharea">
+                    <input type="text" id="search" placeholder="Search by name ...">
+                    <br/>
+                    <button type="button" onclick="performSearch()">Search</button>
+                </section>
+
+                <div id="content-wrapper">
+
+                    <section class="product-table" id="product-table">
+                    </section>
+
+                    <div>
+                        <button type="submit">Submit Order</button>
+                        <button type="reset" onclick="handleReset()">Reset</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
+
+        <footer></footer>
+
+        <script src="scripts.js"></script>
+        <script src="place-order-script.js"></script>
+
+    </body>
+
+</html>
