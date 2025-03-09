@@ -13,6 +13,7 @@ html, body {
 }
 
 header {
+    margin: 0px;
     height: auto;
     background-color: rgba(4, 9, 41, 1);
     color: white;
@@ -24,6 +25,7 @@ header {
 }
 
 header .logo img {
+    margin-left: 152.07px;
     width: 6rem;
     height: 6rem;
 }
@@ -80,6 +82,10 @@ nav ul {
     
 }
 
+nav .div-nav-margin{
+    margin-left: 152.07px;
+}
+
 nav li {
     float: left;
 }
@@ -93,8 +99,10 @@ nav li a {
 }
 
 .background-photo {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 400;
 }
 
 .horizontal-content {
