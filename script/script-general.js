@@ -3,27 +3,36 @@ function loadTemplate(element, templateContent) {
 }
 
 const headerTemplate = `
-        <div class="logo">
-          <img src="/img/logo/logo.PNG" alt="logo">
-        </div>
+  <div class="logo">
+    <img src="/img/logo/logo.PNG" alt="logo">
+  </div>
 
-        <div class="headline">
-          <h2>Smile & Sunshine Toy Co, Ltd.</h2>
-          <h3>We are the best toy manufacturing company in the World !</h3>
-        </div>
+  <div class="headline">
+    <h2>Smile & Sunshine Toy Co, Ltd.</h2>
+    <h3>We are the best toy manufacturing company in the World !</h3>
+  </div>
 
-        <div class="btn">
-          <a href="login.html" class="btn">Login | Register</a>
-          <a href="report-problem.html" class="btn">Report a problem</a>
-        </div>`;
+  <div class="btn">
+    <a href="login.html" class="btn">Login | Register</a>
+    <a href="report-problem.html" class="btn">Report a problem</a>
+  </div>`;
+
+
+const navTemplate_staff = `
+  <ul>
+    <div class="div-nav-margin"/>
+    <li><a href="./Staff/Manager-Production.html">Manage Product</a></li>
+  </ul>`;
+
 
 const navTemplate_customer = `
-        <ul>
-          <div class="div-nav-margin"/><div>
-          <li><a href="place-orders.html">Place Orders</a></li>
-          <li><a href="view-orders.html">View Orders</a></li>
-          <li><a href="update-info.html">Update Profile</a></li>
-        </ul>`;
+  <ul>
+    <div class="div-nav-margin"/>
+    <li><a href="./place-orders.html">Product List</a></li>
+    <li><a href="./place-orders.html">Check Out</a></li>
+    <li><a href="./manage-orders.html">Manage Orders</a></li>
+    <li><a href="./update-profile.html">Update Profile</a></li>
+  </ul>`;
 
 // Function to handle user login
 function handleLogin() {
