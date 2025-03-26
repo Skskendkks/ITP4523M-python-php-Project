@@ -22,6 +22,7 @@ const navTemplate_customer = `
           <div class="div-nav-margin"/><div>
           <li><a href="place-orders.html">Place Orders</a></li>
           <li><a href="view-orders.html">View Orders</a></li>
+          <li><a href="update-info.html">Update Profile</a></li>
         </ul>`;
 
 // Function to handle user login

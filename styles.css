@@ -216,3 +216,7 @@ nav li a {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.flex-container {
+    display: flex;
+}
