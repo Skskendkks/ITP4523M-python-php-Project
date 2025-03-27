@@ -44,7 +44,11 @@ function Login(event) {
     event.preventDefault();
     userType = document.querySelector('input[name="userType"]:checked').value;
     localStorage.setItem("role", userType);
-    window.location.href = "/browse-products.html";
+    if (userType == "customer") {
+        window.location.href = "/browse-products.html";
+    } else if (userType == 'staff') {
+        window.location.href = "/Staff/Manage-Product.html";
+    }
 }
 
 function Logout() {
