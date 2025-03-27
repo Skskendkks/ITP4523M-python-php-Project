@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles/styles-manage-orders.css">
         <title>Manage Orders | Smile & Sunshine</title>
     </head>
 
@@ -13,6 +14,82 @@
         <header></header>
         <nav></nav>
 
+        <section class="container-column">
+            
+            <div>
+
+                <h2 class="underline">Manage Your Orders</h2>
+                <h3>Customer ID: A12345</h3>
+            
+                <div class="sort-area">
+                    <div class="sorting-controls">
+                        <strong>Sorting Options: </strong>
+
+                        <label>
+                          <input type="checkbox" data-key="orderID"> Order ID
+                        </label>
+                        <label>
+                          <input type="checkbox" data-key="orderDate"> Order Date
+                        </label>
+                        <label>
+                          <input type="checkbox" data-key="productID"> Product ID
+                        </label>
+                        <!-- Add more options as needed -->
+                      </div>
+                    
+                      <!-- Display Sorting Order -->
+                      <div id="sorting-sequence">
+                        <strong>Sort Order:</strong> <span id="sort-list">None</span>
+                      </div>
+                </div>
+
+            </div>
+
+            <div class="tableview">
+                <table id="customer-orders"
+                    cellspacing="10" border="1">
+
+                    <thead>
+                        <tr>
+                            <th class="col1">Order ID</th>
+                            <th class="col2">Order Date</th>
+                            <th class="col3">Product ID</th>
+                            <th class="col4">Order Quantity</th>
+                            <th class="col5">Order Cost</th>
+                            <!-- <th>Customer ID</th> -->
+                            <th class="col6">Order Delivery Date</th>
+                            <th class="col7">Order Status</th>
+                            <th class="col8">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>O12345</td>
+                            <td>2025-03-27 11:14:20</td>
+                            <td>P12345</td>
+                            <td>10000</td>
+                            <td>100000.00</td>
+                            <td>2025-03-28 12:00:00</td>
+                            <td>Pending delivery</td>
+                            <td><button class="normal">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>O00001</td>
+                            <td>2025-03-27 12:14:20</td>
+                            <td>P12340</td>
+                            <td>9999</td>
+                            <td>900000.00</td>
+                            <td>2025-03-28 15:00:00</td>
+                            <td>Completed</td>
+                            <td><button class="normal">Delete</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
         
 
         <footer></footer>

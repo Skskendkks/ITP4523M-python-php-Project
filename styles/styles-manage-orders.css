@@ -1,0 +1,104 @@
+.normal-container {
+    font-size: 16px;
+    height: 500px;
+    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.container-column {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.tableview {
+    /* background-color: lightgrey; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;   
+}
+
+.underline {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+thead {
+    background-color:antiquewhite;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#customer-orders {
+    border-collapse: collapse; /* Ensures borders don't double up */
+    width: 100%; /* Optional: Makes the table responsive */
+}
+
+#customer-orders th,
+#customer-orders td {
+  border: 1px solid black; /* Adds borders to all cells */
+  padding: 10px; /* Adds some spacing inside cells */
+  text-align: left; /* Aligns text to the left */
+}
+
+.col1 {
+    width: 10%;
+}
+
+.col2 {
+    width: 15%
+}
+
+.col3 {
+    width: 10%;
+}
+
+.col4 {
+    width: 15%;
+}
+
+.col5 {
+    width: 15%;
+}
+
+.col6 {
+    width: 15%;
+}
+
+.col7 {
+    width: 15%;
+}
+
+.col8 {
+    width: 5%;
+}
+
+button.normal {
+    width: 60px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: pink;
+}
+
+button.normal:hover {
+    background-color: red;
+}
+
+.sort-area{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

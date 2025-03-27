@@ -28,8 +28,8 @@ const navTemplate_staff = `
 const navTemplate_customer = `
   <ul>
     <div class="div-nav-margin"/>
-    <li><a href="./place-orders.html">Product List</a></li>
-    <li><a href="./place-orders.html">Check Out</a></li>
+    <li><a href="./browse-products.html">Browse Products</a></li>
+    <li><a href="./place-orders.html">Place Orders</a></li>
     <li><a href="./manage-orders.html">Manage Orders</a></li>
     <li><a href="./update-profile.html">Update Profile</a></li>
   </ul>`;
@@ -37,7 +37,7 @@ const navTemplate_customer = `
 // Function to handle user login
 function handleLogin() {
   localStorage.setItem("loggedIn", "true");
-  window.location.href = "./make-orders.html";
+  window.location.href = "./browse-products.html";
 }
 
 // Function to update the header based on login status
@@ -54,7 +54,7 @@ function updateHeader() {
 loadTemplate("header", headerTemplate);
 loadTemplate("nav", navTemplate_customer);
 loadTemplate("footer", `<footer><p>Footer content goes here.</p></footer>`);
-updateHeader();
+// updateHeader();
 
 /*
 function loadTemplate(element, templateUrl, callback) {
