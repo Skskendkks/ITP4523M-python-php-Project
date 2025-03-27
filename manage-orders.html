@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="./styles/styles-manage-orders.css">
+        <link rel="stylesheet" href="./styles/style-manage-orders.css">
         <title>Manage Orders | Smile & Sunshine</title>
     </head>
 
@@ -22,25 +22,32 @@
                 <h3>Customer ID: A12345</h3>
             
                 <div class="sort-area">
-                    <div class="sorting-controls">
-                        <strong>Sorting Options: </strong>
 
-                        <label>
-                          <input type="checkbox" data-key="orderID"> Order ID
-                        </label>
-                        <label>
-                          <input type="checkbox" data-key="orderDate"> Order Date
-                        </label>
-                        <label>
-                          <input type="checkbox" data-key="productID"> Product ID
-                        </label>
-                        <!-- Add more options as needed -->
-                      </div>
-                    
-                      <!-- Display Sorting Order -->
-                      <div id="sorting-sequence">
-                        <strong>Sort Order:</strong> <span id="sort-list">None</span>
-                      </div>
+                    <form>
+
+                        <div id="sort-checkbox">
+                            <strong>Sorting Options: </strong>
+                            <label><input type="checkbox" id="orderID" value="Order ID" onclick="updateSortList(this)"> Order ID </label>
+                            <label><input type="checkbox" id="orderdate" value="Order Date" onclick="updateSortList(this)"> Order Date </label>
+                            <label><input type="checkbox" id="productID" value="Product ID" onclick="updateSortList(this)"> Product ID </label>
+                            <label><input type="checkbox" id="orderQty" value="Order Quantity" onclick="updateSortList(this)"> Order Quantity </label>
+                            <label><input type="checkbox" id="orderCost" value="Order Cost" onclick="updateSortList(this)"> Order Cost </label>
+                            <label><input type="checkbox" id="deliverDate" value="Delivery Date" onclick="updateSortList(this)"> Delivery Date </label>
+                            <label><input type="checkbox" id="orderStatus" value="Order Status" onclick="updateSortList(this)"> Order Status </label>
+                        </div>
+                        
+                        <div id="sort-sequence">
+                            <strong>Sort Order:</strong>
+                            <label id="sort-list">None</span>
+                        </div>
+    
+                        <div id="sort-buttons">
+                            <Button type="submit" class="sort">Apply</Button>
+                            <Button type="reset" class="sort" onclick="resetSortList()">Reset</Button>
+                        </div>
+
+                    </form>
+
                 </div>
 
             </div>
@@ -72,7 +79,10 @@
                             <td>100000.00</td>
                             <td>2025-03-28 12:00:00</td>
                             <td>Pending delivery</td>
-                            <td><button class="normal">Delete</button></td>
+                            <td>
+                                <button class="normal" onclick="window.location.href='view-order-details.html'">View</button>
+                                <button class="delete">Delete</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>O00001</td>
@@ -82,7 +92,10 @@
                             <td>900000.00</td>
                             <td>2025-03-28 15:00:00</td>
                             <td>Completed</td>
-                            <td><button class="normal">Delete</button></td>
+                            <td>
+                                <button class="normal" onclick="window.location.href='view-order-details.html'">View</button>
+                                <button class="delete">Delete</button>
+                            </td>
                         </tr>
                     </tbody>
 
@@ -95,6 +108,7 @@
         <footer></footer>
 
         <script src="./script/script-general.js"></script>
+        <script src="./script/script-manage-orders.js"></script>
 
     </body>
 

@@ -79,14 +79,33 @@ h3 {
 }
 
 .col7 {
-    width: 15%;
+    width: 10%;
 }
 
 .col8 {
-    width: 5%;
+    width: 10%;
 }
 
-button.normal {
+#sort-checkbox, #sort-sequence{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+button.sort {
+    width: 60px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button.sort:hover {
+    background-color:aliceblue;
+}
+
+button.delete {
     width: 60px;
     height: 36px;
     border: 1px solid black;
@@ -94,11 +113,25 @@ button.normal {
     background-color: pink;
 }
 
-button.normal:hover {
+button.delete:hover {
     background-color: red;
+}
+
+button.normal {
+    width: 60px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: lightblue;
+    margin-right: 5px;
+}
+
+button.normal:hover {
+    background-color:aliceblue;
 }
 
 .sort-area{
     margin-left: 10px;
     margin-bottom: 20px;
 }
+

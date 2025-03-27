@@ -1,4 +1,4 @@
-function loadTemplate(element, templateContent) {
+function loadCodeBlock(element, templateContent) {
   document.querySelector(element).innerHTML = templateContent;
 }
 
@@ -51,9 +51,9 @@ function updateHeader() {
   }
 }
 
-loadTemplate("header", headerTemplate);
-loadTemplate("nav", navTemplate_customer);
-loadTemplate("footer", `<footer><p>Footer content goes here.</p></footer>`);
+loadCodeBlock("header", headerTemplate);
+loadCodeBlock("nav", navTemplate_customer);
+loadCodeBlock("footer", `<footer><p>Footer content goes here.</p></footer>`);
 // updateHeader();
 
 /*
