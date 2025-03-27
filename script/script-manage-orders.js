@@ -34,3 +34,7 @@ function resetSortList() {
     sortingList = [];
     document.getElementById("sort-list").innerHTML = "None";
 }
+
+function getOrderDetails(action) {
+  window.location.href = `/view-order-details.html?action=${action}`;
+}

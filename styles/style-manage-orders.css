@@ -1,11 +1,3 @@
-.normal-container {
-    font-size: 16px;
-    height: 500px;
-    margin: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
 .container-column {
     font-size: 16px;
     display: flex;
@@ -16,10 +8,11 @@
     margin-bottom: 20px;
     background-color: lightgray;
     border-radius: 5px;
+    padding: 20px;
 }
 
 .tableview {
-    /* background-color: lightgrey; */
+    background-color: white;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
@@ -43,15 +36,15 @@ h3 {
 }
 
 #customer-orders {
-    border-collapse: collapse; /* Ensures borders don't double up */
-    width: 100%; /* Optional: Makes the table responsive */
+    border-collapse: collapse;
+    width: 100%;
 }
 
 #customer-orders th,
 #customer-orders td {
-  border: 1px solid black; /* Adds borders to all cells */
-  padding: 10px; /* Adds some spacing inside cells */
-  text-align: left; /* Aligns text to the left */
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
 }
 
 .col1 {
@@ -67,11 +60,11 @@ h3 {
 }
 
 .col4 {
-    width: 15%;
+    width: 10%;
 }
 
 .col5 {
-    width: 15%;
+    width: 10%;
 }
 
 .col6 {
@@ -79,11 +72,11 @@ h3 {
 }
 
 .col7 {
-    width: 10%;
+    width: 15%;
 }
 
 .col8 {
-    width: 10%;
+    width: 15%;
 }
 
 #sort-checkbox, #sort-sequence{
