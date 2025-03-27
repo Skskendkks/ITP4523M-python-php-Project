@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles/style-view-order-details.css">
         <title>Order Details | Smile & Sunshine</title>
     </head>
 
@@ -13,93 +14,18 @@
         <header></header>
         <nav></nav>
 
+        <section id="warning-section">
+            <h1>Are you sure that you want to delete this order?</h1>
+            <h3>* Orders can only be deleted two days before the receipts delivery date.</h3>
+            <div class="warning-buttons">
+                <button class="confirm-delete" onclick="confirmDelete()">Confirm</button>
+                <button class="cancel-delete" onclick="cancelDelete()">Cancel</button>
+            </div>
+        </section>
+
         <section class="container-column">
+            yes yes
             
-            <div>
-
-                <h2 class="underline">Manage Your Orders</h2>
-                <h3>Customer ID: A12345</h3>
-            
-                <div class="sort-area">
-
-                    <form>
-
-                        <div id="sort-checkbox">
-                            <strong>Sorting Options: </strong>
-                            <label><input type="checkbox" id="orderID" value="Order ID" onclick="updateSortList(this)"> Order ID </label>
-                            <label><input type="checkbox" id="orderdate" value="Order Date" onclick="updateSortList(this)"> Order Date </label>
-                            <label><input type="checkbox" id="productID" value="Product ID" onclick="updateSortList(this)"> Product ID </label>
-                            <label><input type="checkbox" id="orderQty" value="Order Quantity" onclick="updateSortList(this)"> Order Quantity </label>
-                            <label><input type="checkbox" id="orderCost" value="Order Cost" onclick="updateSortList(this)"> Order Cost </label>
-                            <label><input type="checkbox" id="deliverDate" value="Delivery Date" onclick="updateSortList(this)"> Delivery Date </label>
-                            <label><input type="checkbox" id="orderStatus" value="Order Status" onclick="updateSortList(this)"> Order Status </label>
-                        </div>
-                        
-                        <div id="sort-sequence">
-                            <strong>Sort Order:</strong>
-                            <label id="sort-list">None</span>
-                        </div>
-    
-                        <div id="sort-buttons">
-                            <Button type="submit" class="sort">Apply</Button>
-                            <Button type="reset" class="sort" onclick="resetSortList()">Reset</Button>
-                        </div>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-            <div class="tableview">
-                <table id="customer-orders"
-                    cellspacing="10" border="1">
-
-                    <thead>
-                        <tr>
-                            <th class="col1">Order ID</th>
-                            <th class="col2">Order Date</th>
-                            <th class="col3">Product ID</th>
-                            <th class="col4">Order Quantity</th>
-                            <th class="col5">Order Cost</th>
-                            <!-- <th>Customer ID</th> -->
-                            <th class="col6">Order Delivery Date</th>
-                            <th class="col7">Order Status</th>
-                            <th class="col8">Action</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>O12345</td>
-                            <td>2025-03-27 11:14:20</td>
-                            <td>P12345</td>
-                            <td>10000</td>
-                            <td>100000.00</td>
-                            <td>2025-03-28 12:00:00</td>
-                            <td>Pending delivery</td>
-                            <td>
-                                <button class="normal" onclick="window.location.href='view-order-details.html'">View</button>
-                                <button class="delete">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>O00001</td>
-                            <td>2025-03-27 12:14:20</td>
-                            <td>P12340</td>
-                            <td>9999</td>
-                            <td>900000.00</td>
-                            <td>2025-03-28 15:00:00</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="normal" onclick="window.location.href='view-order-details.html'">View</button>
-                                <button class="delete">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
 
         </section>
 
