@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Place Orders | Smile & Sunshine</title>
+        <style>
+            table {
+                margin: 0 auto;
+                border-collapse: collapse;
+            }
+
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button-container input {
+                margin: 0 10px; 
+            }
+        </style>
+    </head>
+    <body>
+
+        <header></header>
+        <nav></nav>
+        <h2 style="text-align: center;">Manage Material</h2>
+        <table border="1">
+            <tr>
+                <th>Material ID</th>
+                <th>Material Name</th>
+                <th>Physical Quantity</th>
+                <th>Reserved Quantity</th>
+                <th>Unit</th>
+                <th>Re-order Level</th>
+            </tr>
+            <tr>
+                <th>MAT001</th>
+                <th>Rubber sheets</th>
+                <th>500</th>
+                <th>100</th>
+                <th>kg</th>
+                <th>200</th>
+                <th><button>Edit</button><button>Delete</button></th>
+            </tr>
+            <tr>
+                <th>MAT002</th>
+                <th>Cotton</th>
+                <th>500</th>
+                <th>100</th>
+                <th>kg</th>
+                <th>200</th>
+                <th><button>Edit</button><button>Delete</button></th>
+            </tr>
+            <tr>
+                <th>MAT003</th>
+                <th>Wood</th>
+                <th>500</th>
+                <th>100</th>
+                <th>kg</th>
+                <th>200</th>
+                <th><button>Edit</button><button>Delete</button></th>
+            </tr>
+            <tr>
+                <th>MAT004</th>
+                <th>Acrylonitrile Butadiene Styrene</th>
+                <th>500</th>
+                <th>100</th>
+                <th>kg</th>
+                <th>200</th>
+                <th><button>Edit</button><button>Delete</button></th>
+            </tr>
+            <tr>
+                <th>MAT005</th>
+                <th>Metal screws</th>
+                <th>500</th>
+                <th>100</th>
+                <th>Screws per box</th>
+                <th>200</th>
+                <th><button>Edit</button><button>Delete</button></th>
+            </tr>
+
+        </table>
+
+        <div class="button-container">
+            <input type="button" value="Add" onclick="window.location.href='add-Material.html'">
+        </div>
+
+        <footer></footer>
+
+        <script src="/script/script-general.js"></script>
+        <script src="/script/script-production.js"></script>
+    </body>
+</html>
