@@ -31,6 +31,7 @@
                             <th>Product Cost</th>
                             <th>Product Quantity</th>
                             <th>Total</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
 
@@ -38,9 +39,10 @@
                         <tr>
                             <td>P12345</td>
                             <td>Car</td>
-                            <td>10.00</td>
-                            <td>10000</td>
-                            <td>100000.00</td>
+                            <td><label id="p">10.00</label></td>
+                            <td><input name="quantity" type="number" min="0" value="10000" id="q" oninput="calculateTotal()"/></td>
+                            <td><output name="total" id="total">100000.00</output></td>
+                            <td><button class="delete">Delete</button></td>
                         </tr>
                     </tbody>
 
@@ -87,7 +89,7 @@
         <footer></footer>
 
         <script src="/script/script-general.js"></script>
-        
+        <script src="/script/script-place-orders.js"></script>
 
     </body>
 

@@ -24,6 +24,7 @@ const navTemplate_staff = `
         <div class="div-nav-margin"/>
         <li><a href="/Staff/Manage-Product.html">Manage Products</a></li>
         <li><a href="/Staff/Manage-Material.html">Manage Materials</a></li>
+        <li><a href="/Staff/Manage-order.html">Manage Orders</a></li>
     </ul>`;
 
 const navTemplate_customer = `

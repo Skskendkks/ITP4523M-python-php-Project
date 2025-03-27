@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles/style-browse-products.css">
         <title>Browse Products | Smile & Sunshine</title>
     </head>
 
@@ -26,10 +27,63 @@
                 <div id="content-wrapper">
 
                     <section class="product-table" id="product-table">
+                        <table id="product-list">
+                            <thead>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Product Image</th>
+                                <th>Product Description</th>
+                                <th>Product Cost</th>
+                                <th>Order Quantity</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Product 1</td>
+                                    <td><img src="/img/product/1.jpg"></td>
+                                    <td>Description for product 1 is here</td>
+                                    <td>10.00</td>
+                                    <td><input name="quantity" type="number" min="0" value="0"/></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Product 2</td>
+                                    <td><img src="/img/product/2.jpg"></td>
+                                    <td>Description for product 2 is here</td>
+                                    <td>10.00</td>
+                                    <td><input name="quantity" type="number" min="0" value="0"/></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Product 3</td>
+                                    <td><img src="/img/product/3.jpg"></td>
+                                    <td>Description for product 3 is here</td>
+                                    <td>10.00</td>
+                                    <td><input name="quantity" type="number" min="0" value="0"/></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Product 4</td>
+                                    <td><img src="/img/product/4.jpg"></td>
+                                    <td>Description for product 4 is here</td>
+                                    <td>10.00</td>
+                                    <td><input name="quantity" type="number" min="0" value="0"/></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Product 5</td>
+                                    <td><img src="/img/product/5.jpg"></td>
+                                    <td>Description for product 5 is here</td>
+                                    <td>10.00</td>
+                                    <td><input name="quantity" type="number" min="0" value="0"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </section>
 
                     <div>
-                        <button type="submit">Submit Order</button>
+                        <button type="submit">Add to Cart</button>
                         <button type="reset" onclick="handleReset()">Reset</button>
                     </div>
 
