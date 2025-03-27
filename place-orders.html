@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles/style-place-orders.css">
         <title>Place Orders | Smile & Sunshine</title>
     </head>
 
@@ -13,28 +14,72 @@
         <header></header>
         <nav></nav>
 
-        <form id="order-form">
+        <form id="shopping-cart">
 
-            <div class="horizontal-content">
+            <div>
+                <h2 class="underline">Confirm Your Order:</h2>
+            </div>
 
-                <section class="searcharea">
-                    <input type="text" id="search" placeholder="Search by name ...">
-                    <br/>
-                    <button type="button" onclick="performSearch()">Search</button>
-                </section>
+            <div class="order-product-details">
+                <table id="detailed-products"
+                    cellspacing="10" border="1">
 
-                <div id="content-wrapper">
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Product Cost</th>
+                            <th>Product Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
 
-                    <section class="product-table" id="product-table">
-                    </section>
+                    <tbody>
+                        <tr>
+                            <td>P12345</td>
+                            <td>Car</td>
+                            <td>10.00</td>
+                            <td>10000</td>
+                            <td>100000.00</td>
+                        </tr>
+                    </tbody>
 
-                    <div>
-                        <button type="submit">Submit Order</button>
-                        <button type="reset" onclick="handleReset()">Reset</button>
-                    </div>
+                </table>
+            </div>
 
-                </div>
+            <div class="information-area">
+                <table id="customer-profile"
+                    cellspacing="10">
+                    <tr>
+                        <td class="header-text" colspan="2"><h2>Customer Information</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">Customer ID:</td>
+                        <td class="sec-col" id="customer-id">C12345</td>
+                    </tr>
+                    <tr>
 
+                        <td class="first-col">Customer Name:</td>
+                        <td class="sec-col" id="customer-name">Chan Tai Man</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">Company Name:</td>
+                        <td class="sec-col" id="customer-companyname">ABC Company Limited</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">Contact Number:</td>
+                        <td class="sec-col" id="customer-telephone">12345678</td>
+                    </tr>
+                    <tr>
+                        <td class="first-col">Address:</td>
+                        <td class="sec-col" id="customer-address">21 Yuen Wo Road, Sha Tin, N.T., Hong Kong</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="submit-area">
+                <button class="normal">Confirm</button>
+                <button class="normal">Reset</button>
             </div>
 
         </form>
@@ -42,7 +87,7 @@
         <footer></footer>
 
         <script src="/script/script-general.js"></script>
-        <script src="/script/script-place-orders.js"></script>
+        
 
     </body>
 

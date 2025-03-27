@@ -13,12 +13,37 @@
         <header></header>
         <nav></nav>
 
-        
+        <form id="order-form">
+
+            <div class="horizontal-content">
+
+                <section class="searcharea">
+                    <input type="text" id="search" placeholder="Search by name ...">
+                    <br/>
+                    <button type="button" onclick="performSearch()">Search</button>
+                </section>
+
+                <div id="content-wrapper">
+
+                    <section class="product-table" id="product-table">
+                    </section>
+
+                    <div>
+                        <button type="submit">Submit Order</button>
+                        <button type="reset" onclick="handleReset()">Reset</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
         
 
         <footer></footer>
 
         <script src="/script/script-general.js"></script>
+        <script src="/script/script-place-orders.js"></script>
 
     </body>
 
