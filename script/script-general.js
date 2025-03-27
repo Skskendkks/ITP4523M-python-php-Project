@@ -13,25 +13,25 @@ const headerTemplate = `
   </div>
 
   <div class="btn">
-    <a href="login.html" class="btn">Login | Register</a>
-    <a href="report-problem.html" class="btn">Report a problem</a>
+    <a href="/login.html" class="btn">Login | Register</a>
+    <a href="/report-problem.html" class="btn">Report a problem</a>
   </div>`;
 
 
 const navTemplate_staff = `
   <ul>
     <div class="div-nav-margin"/>
-    <li><a href="./Staff/Manager-Production.html">Manage Product</a></li>
+    <li><a href="/Staff/Manage-Product.html">Manage Product</a></li>
   </ul>`;
 
 
 const navTemplate_customer = `
   <ul>
     <div class="div-nav-margin"/>
-    <li><a href="./browse-products.html">Browse Products</a></li>
-    <li><a href="./place-orders.html">Place Orders</a></li>
-    <li><a href="./manage-orders.html">Manage Orders</a></li>
-    <li><a href="./update-profile.html">Update Profile</a></li>
+    <li><a href="/browse-products.html">Browse Products</a></li>
+    <li><a href="/place-orders.html">Place Orders</a></li>
+    <li><a href="/manage-orders.html">Manage Orders</a></li>
+    <li><a href="/update-profile.html">Update Profile</a></li>
   </ul>`;
 
 // Function to handle user login
