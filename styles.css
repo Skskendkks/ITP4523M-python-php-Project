@@ -257,3 +257,8 @@ nav li a {
     justify-content: center;
     align-items: center;
 }
+
+.bottom {
+    background-color: blue;
+    color: white;
+}

@@ -2,22 +2,22 @@ const headerTemplate = `
     <div class="logo">
         <img src="/img/logo/logo.PNG" alt="logo">
     </div>
-
     <div class="headline">
         <h2>Smile & Sunshine Toy Co, Ltd.</h2>
         <h3>We are the best toy manufacturing company in the World !</h3>
     </div>
-
     <div class="btn">
         <a href="/login.html" class="btn">Login | Register</a>
         <a href="/report-problem.html" class="btn">Report a problem</a>
-    </div>`;
+    </div>
+    `;
 
 const navTemplate_general = `
     <ul>
         <div class="div-nav-margin"/>
         <li><a href="/about-us.html">About Us</a></li>
-    </ul>`;
+    </ul>
+    `;
 
 const navTemplate_staff = `
     <ul>
@@ -25,7 +25,8 @@ const navTemplate_staff = `
         <li><a href="/Staff/Manage-Product.html">Manage Products</a></li>
         <li><a href="/Staff/Manage-Material.html">Manage Materials</a></li>
         <li><a href="/Staff/Manage-order.html">Manage Orders</a></li>
-    </ul>`;
+    </ul>
+    `;
 
 const navTemplate_customer = `
     <ul>
@@ -34,7 +35,16 @@ const navTemplate_customer = `
         <li><a href="/place-orders.html">Order Cart</a></li>
         <li><a href="/manage-orders.html">Manage Orders</a></li>
         <li><a href="/update-profile.html">Update Profile</a></li>
-    </ul>`;
+    </ul>
+    `;
+
+const footerTemplate = `
+    <div class="bottom">
+        <br/>
+        <p>Copy rights reserved. </p>
+        <br/>
+    </div>
+    `;
 
 function loadCodeBlock(element, templateContent) {
     document.querySelector(element).innerHTML = templateContent;
@@ -72,4 +82,4 @@ if (currentRole != null) {
 
 loadCodeBlock("header", headerTemplate);
 loadCodeBlock("nav", navTemplate);
-loadCodeBlock("footer", `<footer><p>Footer content goes here.</p></footer>`);
+loadCodeBlock("footer", footerTemplate);
