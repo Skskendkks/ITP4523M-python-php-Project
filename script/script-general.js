@@ -41,7 +41,7 @@ const navTemplate_customer = `
 const footerTemplate = `
     <div class="bottom">
         <br/>
-        <p>Copy rights reserved. </p>
+        <p style="text-align: center;">Copyright © 2025 Smile & Sunshine Toy Co, Ltd. All rights reserved.</p>
         <br/>
     </div>
     `;
