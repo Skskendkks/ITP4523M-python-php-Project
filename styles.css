@@ -221,3 +221,39 @@ nav li a {
     display: flex;
 }
 
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.production-type {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.introduction p {
+    font-size: 25px;
+    margin-right: 70px;
+    color: green;
+    border: 1px solid green;
+}
+
+.flex-item {
+    display: flex;
+    background-color: lightgrey;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
