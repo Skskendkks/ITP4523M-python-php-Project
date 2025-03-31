@@ -1,3 +1,7 @@
+body {
+    background-color: lightgrey;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row nowrap;
@@ -5,15 +9,17 @@
     height: 500px;
     margin: 20px;
     margin-left: 150px;
+    height: 100vh;
     /* border: 2px solid black; */
 }
 
-.flex-item {
-    background-color: lightgrey;
+.flex-item-profile {
+    background-color:blanchedalmond;
     margin: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
+    height: 500px;
 }
 
 #customer-profile {
