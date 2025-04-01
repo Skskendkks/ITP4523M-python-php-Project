@@ -87,11 +87,13 @@ table {
     text-align: center;
 }
 
-.material-image {
+.product-image {
     width: 100px;
     height: 100px;
 }
-
+body {
+    background-color: FFFFFF !important;
+}
 
 th, td {
     border: 1px solid black;
