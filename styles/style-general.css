@@ -286,3 +286,8 @@ nav li a {
     border-radius: 4px;
     border: 0px;
 }
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
