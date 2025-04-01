@@ -96,5 +96,5 @@ table {
 th, td {
     border: 1px solid black;
     margin: 1px;
-    padding: 5px;
+    padding: 5px; /* Optional: to add some padding inside the cells */
 }

@@ -5,9 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style-general.css">
-    <link rel="stylesheet" href="/styles/style-report.css">
+    <link rel="stylesheet" href="/styles/style-material.css">
     <title>Generate Report | Smile & Sunshine</title>
     <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container input {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <header></header>
@@ -15,29 +28,95 @@
 
 <body>
     <div class="container">
-        <h2 class=centered-title""> Generate Report </h2>
+        <h2 style="text-align: center;"> Generate Report </h2>
+
+        <table>
+            <th>Graph</th>
+
+        </table>
 
         <table border="1">
             <tr>
-                <th>Product ID</th>
-                <th>Product Name</th>
-                <th>Product image</th>
-                <th>Total order item</th>
-                <th>Total order</th>
+                <table border="1">
+                    <tr>
+                        <td>Order ID</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>Order Date</td>
+                        <td>2021-08-01</td>
+                    </tr>
+                    <tr>
+                        <td>Product ID</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>Product Image</td>
+                        <td><img src="/img/product/1.png" style="width: 200px; height: 200px"></td>
+                    </tr>
+                    <tr>
+                        <td>Order Quantity</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Total Order Amount</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Customer's Contact Name</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>Customer's Contact Number</td>
+                        <td>012-3456789</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Address</td>
+                        <td>123, ABC Street, 12345, ABC</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Date</td>
+                        <td>2021-08-10</td>
+                    </tr>
+                    <tr>
+                        <td>Order Status</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>Material Name</td>
+                        <td>Rubber sheets</td>
+                    </tr>
+                    <tr>
+                        <td>Used Materials in the Order</td>
+                        <td>MAT001, MAT002</td>
+                    </tr>
+                    <tr>
+                        <td>Material Physical Quantity</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Material Available Quantity</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Unit of the Material</td>
+                        <td>kg</td>
+                    </tr>
+                    <tr>
+                        <td>Material Low Stock Alert</td>
+                        <td>200</td>
+                    </tr>
+                </table><br><br>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Cyber turck</td>
-                <td><img class="product-image" src="/img/product/1.png" alt="Product 1"></td>
-                <td>100</td>
-                <td>50</td>
-        </table><br><br>
 
-
+            </tr>
+        </table>
     </div>
 </body>
 <footer></footer>
 
 <script src="/script/script-general.js"></script>
+<script src="/script/script-view-order-details.js"></script>
 
 </html>
