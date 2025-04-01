@@ -10,6 +10,7 @@ html, body {
     padding: 0px;
     width: 100%;
     min-width: 1000px;
+    background-color: lightgrey;
 }
 
 header {
@@ -240,13 +241,16 @@ nav li a {
     font-size: 24px;
     margin-right: 70px;
     color: green;
+    border-radius: 5px;
     border: 1px solid green;
     text-align: center;
+    background-color: light;
+    padding: 30px;
 }
 
 .flex-item {
     display: flex;
-    background-color: lightgrey;
+    background-color: lightblue;
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;

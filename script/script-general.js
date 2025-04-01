@@ -16,6 +16,7 @@ const navTemplate_general = `
     <ul>
         <div class="div-nav-margin"/>
         <li><a href="/about-us.html">About Us</a></li>
+        <li><a href="/about-us.html">Contact Us</a></li>
     </ul>
     `;
 
@@ -25,6 +26,7 @@ const navTemplate_staff = `
         <li><a href="/Staff/Manage-Product.html">Manage Products</a></li>
         <li><a href="/Staff/Manage-Material.html">Manage Materials</a></li>
         <li><a href="/Staff/Manage-order.html">Manage Orders</a></li>
+        <li><a href="/Staff/Generate-report.html">Generate Report</a></li>
     </ul>
     `;
 
