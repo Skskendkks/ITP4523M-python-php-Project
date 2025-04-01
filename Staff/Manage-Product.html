@@ -5,100 +5,90 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/styles/style-order.css">
         <title>Place Orders | Smile & Sunshine</title>
-        <style>
-            table {
-                margin: 0 auto;
-                border-collapse: collapse;
-            }
-
-            .button-container {
-                text-align: center;
-                margin-top: 20px;
-            }
-
-            .button-container input {
-                margin: 0 10px; 
-            }
-        </style>
     </head>
 
     <body>
 
         <header></header>
         <nav></nav>
-        <h2 style="text-align: center;">Production Manager</h2>
+        <h2 class="centered-title">Production Manager</h2>
         <table border="1">
             <tr>
-                <th style="text-align: center;">Product ID</th>
-                <th style="text-align: center;">Product Name</th>
-                <th style="text-align: center;">Product Description</th>
-                <th style="text-align: center;">Product Image</th>
-                <th style="text-align: center;">Single Product Cost</th>
-                <th style="text-align: center;">Material ID</th>
-                <th style="text-align: center;">Material Quantity</th>
-                <th style="text-align: center;">Action</th>
+                <th class="centered">Product ID</th>
+                <th class="centered">Product Name</th>
+                <th class="centered">Product Description</th>
+                <th class="centered">Product Image</th>
+                <th class="centered">Single Product Cost</th>
+                <th class="centered">Material ID</th>
+                <th class="centered">Material Quantity</th>
+                <th class="centered">Action</th>
             </tr>
             <tr>
-                <td style="text-align: center;">001</td>
-                <td style="text-align: center;">Cyber Truck</td>
-                <td style="text-align: center;">This is a sample product description.</td>
-                <td style="text-align: center;"><img src="/img/product/1.jpg" style="width: 200px; height: 200px"></td>
-                <td style="text-align: center;">$10.00</td>
-                <td style="text-align: center;">MAT004</td>
-                <td style="text-align: center;">5</td>
-                <td style="text-align: center;"><input type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input type="button" value="Delete"></td>
+                <td class="centered">001</td>
+                <td class="centered">Cyber Truck</td>
+                <td class="centered">This is a sample product description.</td>
+                <td class="centered"><img src="/img/product/1.jpg" class="product-image"></td>
+                <td class="centered">$10.00</td>
+                <td class="centered">MAT004</td>
+                <td class="centered">5</td>
+                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                    <input class="buttonD" type="button" value="Delete"></td>
             </tr>
             <tr>
-                <td style="text-align: center;">002</td>
-                <td style="text-align: center;">Airplane</td>
-                <td style="text-align: center;">This is a sample product description.</td>
-                <td style="text-align: center;"><img src="/img/product/2.jpg" style="width: 200px; height: 200px"></td>
-                <td style="text-align: center;">$10.00</td>
-                <td style="text-align: center;">MAT002, MAT005</td>
-                <td style="text-align: center;">5</td>
-                <td style="text-align: center;"><input type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input type="button" value="Delete"></td>
+                <td class="centered">002</td>
+                <td class="centered">Airplane</td>
+                <td class="centered">This is a sample product description.</td>
+                <td class="centered"><img src="/img/product/2.jpg" class="product-image"></td>
+                <td class="centered">$10.00</td>
+                <td class="centered">MAT002, MAT005</td>
+                <td class="centered">5</td>
+                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                    <input class="buttonD" type="button" value="Delete"></td>
             </tr>
             <tr>
-                <td style="text-align: center;">003</td>
-                <td style="text-align: center;">Rebot</td>
-                <td style="text-align: center;">This is a sample product description.</td>
-                <td style="text-align: center;"><img src="/img/product/3.jpg" style="width: 200px; height: 200px"></td>
-                <td style="text-align: center;">$10.00</td>
-                <td style="text-align: center;">MAT001</td>
-                <td style="text-align: center;">5</td>
-                <td style="text-align: center;"><input type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input type="button" value="Delete"></td>
+                <td class="centered">003</td>
+                <td class="centered">Rebot</td>
+                <td class="centered">This is a sample product description.</td>
+                <td class="centered"><img src="/img/product/3.jpg" class="product-image"></td>
+                <td class="centered">$10.00</td>
+                <td class="centered">MAT001</td>
+                <td class="centered">5</td>
+                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                    <input class="buttonD" type="button" value="Delete"></td>
             </tr>
             <tr>
-                <td style="text-align: center;">004</td>
-                <td style="text-align: center;">Spherical flying toy helicopter</td>
-                <td style="text-align: center;">This is a sample product description.</td>
-                <td style="text-align: center;"><img src="/img/product/4.jpg" style="width: 200px; height: 200px"></td>
-                <td style="text-align: center;">$10.00</td>
-                <td style="text-align: center;">MAT001, MAT003</td>
-                <td style="text-align: center;">5</td>
-                <td style="text-align: center;"><input type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input type="button" value="Delete"></td>
+                <td class="centered">004</td>
+                <td class="centered">Spherical flying toy helicopter</td>
+                <td class="centered">This is a sample product description.</td>
+                <td class="centered"><img src="/img/product/4.jpg" class="product-image"></td>
+                <td class="centered">$10.00</td>
+                <td class="centered">MAT001, MAT003</td>
+                <td class="centered">5</td>
+                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                    <input class="buttonD" type="button" value="Delete"></td>
             </tr>
             <tr>
-                <td style="text-align: center;">005</td>
-                <td style="text-align: center;">Cat toy</td>
-                <td style="text-align: center;">This is a sample product description.</td>
-                <td style="text-align: center;"><img src="/img/product/5.jpg" style="width: 200px; height: 200px"></td>
-                <td style="text-align: center;">$10.00</td>
-                <td style="text-align: center;">MAT005</td>
-                <td style="text-align: center;">5</td>
-                <td style="text-align: center;"><input type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input type="button" value="Delete"></td>
+                <td class="centered">005</td>
+                <td class="centered">Cat toy</td>
+                <td class="centered">This is a sample product description.</td>
+                <td class="centered"><img src="/img/product/5.jpg" class="product-image"></td>
+                <td class="centered">$10.00</td>
+                <td class="centered">MAT005</td>
+                <td class="centered">5</td>
+                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                    <input class="buttonD" type="button" value="Delete"></td>
             </tr>
         </table>
 
         <div class="button-container">
-            <input type="button" value="Add" onclick="window.location.href='add-product.html'">
-            <input type="button" value="Delete" onclick="window.location.href='delete-product.html'">
+            <button class="button normal" type="button" value="Add" onclick="window.location.href='add-product.html'" aria-label="Add Product">
+                Add
+            </button>
+            <button class="button delete" type="button" value="Delete" onclick="window.location.href='delete-product.html'" aria-label="Delete Product">
+                Delete
+            </button>
         </div>
 
         <footer></footer>

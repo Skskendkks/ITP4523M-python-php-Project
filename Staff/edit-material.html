@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/styles-product.css">
+    <link rel="stylesheet" href="/styles/style-material.css">
     <title>Place Orders | Smile & Sunshine</title>
     <style>
 
@@ -18,9 +18,9 @@
 <body>
     <div class="container">
 
-        <h2 style="text-align: center;">edit material</h2><br>
+        <h2 class="centered-title">Edit material</h2><br>
 
-        <form>
+        <form onsubmit="return validateForm()"">
             <label for="Order ID">Order ID:</label>
             <input type="text" id="Order ID" name="Order ID" required><br><br>
             <label for="material-name">Material Name:</label>
@@ -57,24 +57,15 @@
             <input type="text" id="unit-of-the-material" name="unit-of-the-material" required><br><br>
             <label for="Material Low Stock Alert">Materail Low Stock Alert:</label>
             <input type="number" id="material-low-stock-alert" name="material-low-stock-alert" required><br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input class="buttonE" type="submit" value="Submit">
+            <input class="buttonD" type="reset" value="Reset">
         </from>
-
-
-
-
-
-
-
-
-
     </div>
 </body>
 <footer></footer>
 
 <script src="/script/script-general.js"></script>
-<script src="/script/script-production.js"></script>
+<script src="/script/script-material.js"></script>
 
 
 </html>

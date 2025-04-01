@@ -87,10 +87,14 @@ table {
     text-align: center;
 }
 
-.product-image {
+.material-image {
     width: 100px;
     height: 100px;
 }
-body {
-    background-color: FFFFFF!important;
+
+
+th, td {
+    border: 1px solid black;
+    margin: 1px;
+    padding: 5px; /* Optional: to add some padding inside the cells */
 }

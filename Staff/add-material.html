@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/styles/style-product.css">
+    <link rel="stylesheet" href="/styles/style-material.css">
     <title>Place Orders | Smile & Sunshine</title>
     <style>
         
@@ -15,9 +15,9 @@
 <nav></nav>
 <body>
     <div class="container">
-        <h2 style="text-align: center;">Add material</h2><br> 
+        <h2 class="centered-title">Add material</h2><br> 
         The material ID will auto assign by the system. <br><br> 
-        <form>
+        <form onload="return validateForm()">
         <label for="material-name">Material Name:</label>
         <input type="text" id="material-name" name="material-name" required><br><br>
         <label for="Physical -quantity">Physical Quantity:</label>
@@ -40,7 +40,7 @@
     <footer></footer>
 
     <script src="/script/script-general.js"></script>
-    <script src="/script/script-production.js"></script>
+    <script src="/script/script-material.js"></script>
 
 
 </html>
