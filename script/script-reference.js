@@ -72,7 +72,7 @@ for (let i = 0; i < 5; i++) {
         name: `Product ${i + 1}`,
         description: `This is the description for Product ${i + 1}. It's amazing!`,
         price: ((i + 1) * 10).toFixed(2),
-        image: `img/product/${i + 1}.jpg`
+        image: `img/product/${i + 1}.png`
     };
 
 }
