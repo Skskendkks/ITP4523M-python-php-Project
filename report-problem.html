@@ -5,38 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style-general.css">
+    <style>
+        #main-wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: antiquewhite;
+            padding: 30px;
+            height: 600px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 60px;
+            height: 24px;
+            border-radius: 3px;
+            border: 0px;
+            background-color:cadetblue;
+        }
+
+
+    </style>
 </head>
-<header></header>
-<nav></nav>
 
 <body>
 
     <header></header>
     <nav></nav>
 
-    <div class="container">
-        <h1>Report Issue</h1><br>
-
-        <h2>Type of the problem</h2><br>
-        <form>
-            <lable><input type="radio" name="problem" value="error" required> Website improvement (e.g., user interface,
-                search functionality, incomplete review system)</br></lable>
-            <lable><input type="radio" name="problem" value="error" required> Security issue (website
-                vulnerability)</br></lable>
-            <lable><input type="radio" name="problem" value="error" required> Comment section issue (e.g., inappropriate
-                comments, false reviews, offensive language)</br></lable>
-            <lable><input type="radio" name="problem" value="error" required> Other</br></lable>
-            <p>Upload a screenshot to assist us in resolving the problem. (Max file size: 25 MB)</p>
-            <lable><input type="file" name="file" value="Choose file" required /></br></lable>
-            <p>
-                <button type="submit" class="ytn">submit</button><button type="reset" style="margin-left: 16px">reset</button>
-            </p>
-            <p>
-                Text Description
-            </p>
-            <textarea style="width: 50%; height: 200px;"></textarea>
-        </form>
-    </div>
+    <section id="main-wrapper">
+        <div class="container">
+            <h1 style="text-decoration: underline;">Report Issue</h1><br>
+            <form>
+                <h4>Type of the problem</h4><br>
+                <label><input type="radio" name="problem" value="error" required> Website improvement (e.g., user interface,
+                    search functionality, incomplete review system)<br/></label>
+                <label><input type="radio" name="problem" value="error" required> Security issue (website
+                    vulnerability)<br/></label>
+                <label><input type="radio" name="problem" value="error" required> Comment section issue (e.g., inappropriate
+                    comments, false reviews, offensive language)<br/></label>
+                <label><input type="radio" name="problem" value="error" required> Other<br/></label>
+                <h4 style="margin-top: 10px; margin-bottom: 10px;">Upload a screenshot to assist us in resolving the problem. (Max file size: 25 MB)</h4>
+                <label><input type="file" name="file" value="Choose file" required /><br/></label>
+                <h4 style="margin-top: 10px; margin-bottom: 10px;">Text Description</h4>
+                <textarea style="width: 50%; height: 200px;"></textarea>
+                <div>
+                    <button type="submit" class="ytn">submit</button><button type="reset" style="margin-left: 16px">reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
 
     <footer></footer>
 

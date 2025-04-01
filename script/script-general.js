@@ -30,7 +30,6 @@ const navTemplate_general = `
     <ul>
         <div class="div-nav-margin"/>
         <li><a href="/about-us.html">About Us</a></li>
-        <li><a href="/about-us.html">Contact Us</a></li>
     </ul>
     `;
 
@@ -42,6 +41,10 @@ const navTemplate_staff = `
         <li><a href="/staff/manage-orders.html">Manage Orders</a></li>
         <li><a href="/staff/generate-report.html">Generate Report</a></li>
     </ul>
+    <div id="user-info-box">
+        <p>Welcome, User</p>
+        <button onclick="Logout()">Logout</button>
+    </div>
     `;
 
 const navTemplate_customer = `
@@ -52,6 +55,10 @@ const navTemplate_customer = `
         <li><a href="/customer/manage-orders.html">Manage Orders</a></li>
         <li><a href="/customer/update-profile.html">Update Profile</a></li>
     </ul>
+    <div id="user-info-box">
+        <p>Welcome, User</p>
+        <button onclick="Logout()">Logout</button>
+    </div>
     `;
 
 const footerTemplate = `
