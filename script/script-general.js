@@ -38,7 +38,7 @@ const navTemplate_staff = `
         <div class="div-nav-margin"/>
         <li><a href="/staff/manage-products.html">Manage Products</a></li>
         <li><a href="/staff/manage-materials.html">Manage Materials</a></li>
-        <li><a href="/staff/manage-orders.html">Manage Orders</a></li>
+        <li><a href="/staff/manage-customer-orders.html">Manage Orders</a></li>
         <li><a href="/staff/generate-report.html">Generate Report</a></li>
     </ul>
     <div id="user-info-box">
