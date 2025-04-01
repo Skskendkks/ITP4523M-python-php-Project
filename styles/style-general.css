@@ -268,3 +268,8 @@ nav li a {
     background-color: blue;
     color: white;
 }
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
