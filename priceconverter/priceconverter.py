@@ -30,7 +30,7 @@ if __name__ == "__main__":
     try:
         app.run(debug = True,
               host = '0.0.0.0',
-              port = random.randint(2000, 9000))
+              port = 8080)
         input("Press Enter to close...")
     except Exception as e:
         print(e)
