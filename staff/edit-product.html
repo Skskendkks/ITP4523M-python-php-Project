@@ -5,54 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style-general.css">
-    <link rel="stylesheet" href="/styles/style-product.css">
+    <link rel="stylesheet" href="/styles/style-manage-products.css">
     <title>Edit Product | Smile & Sunshine</title>
     <style>
-        .container {
+        #main-wrapper {
             height: 100vh;
         }
     </style>
 </head>
 
-
 <body>
 
     <header></header>
     <nav></nav>
-    <div class="container">
-        <h2 class="centered-title">Edit product</h2><br>
-        The product ID will auto assign by the system. <br><br>
-        <form onsubmit="return validateForm()">
-        <!--it will auto load the database data and submit-->
-        <label for="product-name">Product Name:</label>
-        <input type="text" id="product-name" name="product-name" required><br><br>
-        <label for="product-description">Product Description:</label>
-        <input type="text" id="product-description" name="product-description" required><br><br>
-        <label for="product-image">Product Image: (Max file size: 25 MB)</label>
-        <input type="file" id="product-image" name="product-image" required><br><br>
-        <label for="Material ID">Material ID: </label>
-        <!-- The Material ID will load on the database. -->
-        <input type="checkbox" id="MAT001" name="Material ID" value="MAT001">
-        <label for="MAT001">MAT001</label>
-        <input type="checkbox" id="MAT002" name="Material ID" value="MAT002">
-        <label for="MAT002">MAT002</label>
-        <input type="checkbox" id="MAT003" name="Material ID" value="MAT003">
-        <label for="MAT003">MAT003</label>
-        <input type="checkbox" id="MAT004" name="Material ID" value="MAT004">
-        <label for="MAT004">MAT004</label>
-        <input type="checkbox" id="MAT005" name="Material ID" value="MAT005">
-        <label for="MAT005">MAT005</label><br><br>
-        <label for="Product Quantity">Product Quantity:</label>
-        <input type="number" id="product-quantity" name="product-quantify" required><br><br>
-        <input type="submit"  class="buttonE centered" value="Submit">
-        <input type="reset" class="buttonD centered" value="Reset">
-        </form>
-    </div>
+
+    <section id="main-wrapper">
+
+        <div class="container">
+            <h2 class="centered-title">Edit Product</h2><br>
+            <table id="add-product">
+                    <tr>
+                        <td><label for="product-id">Product ID:</label></td>
+                        <td><input type="text" id="product-id" name="product-id" value="XXXXX" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product-name">Product Name:</label></td>
+                        <td><input type="text" id="product-name" name="product-name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product-description">Product Description:</label></td>
+                        <td><input type="text" id="product-description" name="product-description" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product-image">Product Image: (Max file size: 25 MB)</label></td>
+                        <td><input type="file" id="product-image" name="product-image" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Material" colspan="2" style="text-decoration: underline;">Material Quantity: </label></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">MAT001</td>
+                        <td><input type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">MAT002</td>
+                        <td><input type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">MAT003</td>
+                        <td><input type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">MAT004</td>
+                        <td><input type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">MAT005</td>
+                        <td><input type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Product Quantity">Product Quantity:</label></td>
+                        <td><input type="number" id="product-quantity" name="product-quantify" min="0" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><input class="buttonE" type="submit" value="Save"></td>
+                        <td><input class="buttonD"type="reset" value="Cancel"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
 
     <footer></footer>
 
-<script src="/script/script-general.js"></script>
-<script src="/script/script-product.js"></script>
+    <script src="/script/script-general.js"></script>
+    <script src="/script/script-manage-products.js"></script>
 
 </body>
 

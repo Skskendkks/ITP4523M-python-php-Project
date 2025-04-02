@@ -98,3 +98,19 @@ th, td {
     margin: 1px;
     padding: 5px; /* Optional: to add some padding inside the cells */
 }
+
+h2.centered-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+td {
+    min-width: 150px;
+    background-color: white;
+}
+
+th {
+    padding: 20px;
+    background-color: antiquewhite;
+}

@@ -239,7 +239,7 @@ nav li a {
 }
 
 .introduction p {
-    font-size: 24px;
+    font-size: 36px;
     margin-right: 70px;
     color: green;
     border-radius: 5px;
@@ -247,6 +247,7 @@ nav li a {
     text-align: center;
     background-color: light;
     padding: 30px;
+    width: 1500px;
 }
 
 .flex-item {
@@ -258,8 +259,8 @@ nav li a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
-    width: 300px;
-    height: 150px;
+    width: 700px;
+    height: 400px;
     font-size: 24px;
     justify-content: center;
     align-items: center;

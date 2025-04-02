@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/styles/style-general.css">
-        <link rel="stylesheet" href="/styles/style-order.css">
+        <link rel="stylesheet" href="/styles/style-manage-products.css">
         <title>Manage Products | Smile & Sunshine</title>
     </head>
 
@@ -13,87 +13,101 @@
 
         <header></header>
         <nav></nav>
-        <h2 class="centered-title">Production Manager</h2>
-        <table border="1">
-            <tr>
-                <th class="centered">Product ID</th>
-                <th class="centered">Product Name</th>
-                <th class="centered">Product Description</th>
-                <th class="centered">Product Image</th>
-                <th class="centered">Single Product Cost</th>
-                <th class="centered">Material ID</th>
-                <th class="centered">Material Quantity</th>
-                <th class="centered">Action</th>
-            </tr>
-            <tr>
-                <td class="centered">001</td>
-                <td class="centered">Cyber Truck</td>
-                <td class="centered">This is a sample product description.</td>
-                <td class="centered"><img src="/img/product/1.png" class="product-image"></td>
-                <td class="centered">$10.00</td>
-                <td class="centered">MAT004</td>
-                <td class="centered">5</td>
-                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input class="buttonD" type="button" value="Delete"></td>
-            </tr>
-            <tr>
-                <td class="centered">002</td>
-                <td class="centered">Airplane</td>
-                <td class="centered">This is a sample product description.</td>
-                <td class="centered"><img src="/img/product/2.png" class="product-image"></td>
-                <td class="centered">$10.00</td>
-                <td class="centered">MAT002, MAT005</td>
-                <td class="centered">5</td>
-                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input class="buttonD" type="button" value="Delete"></td>
-            </tr>
-            <tr>
-                <td class="centered">003</td>
-                <td class="centered">Rebot</td>
-                <td class="centered">This is a sample product description.</td>
-                <td class="centered"><img src="/img/product/3.png" class="product-image"></td>
-                <td class="centered">$10.00</td>
-                <td class="centered">MAT001</td>
-                <td class="centered">5</td>
-                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input class="buttonD" type="button" value="Delete"></td>
-            </tr>
-            <tr>
-                <td class="centered">004</td>
-                <td class="centered">Spherical flying toy helicopter</td>
-                <td class="centered">This is a sample product description.</td>
-                <td class="centered"><img src="/img/product/4.png" class="product-image"></td>
-                <td class="centered">$10.00</td>
-                <td class="centered">MAT001, MAT003</td>
-                <td class="centered">5</td>
-                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input class="buttonD" type="button" value="Delete"></td>
-            </tr>
-            <tr>
-                <td class="centered">005</td>
-                <td class="centered">Cat toy</td>
-                <td class="centered">This is a sample product description.</td>
-                <td class="centered"><img src="/img/product/5.png" class="product-image"></td>
-                <td class="centered">$10.00</td>
-                <td class="centered">MAT005</td>
-                <td class="centered">5</td>
-                <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
-                    <input class="buttonD" type="button" value="Delete"></td>
-            </tr>
-        </table>
 
-        <div class="button-container">
-            <button class="button normal" type="button" value="Add" onclick="window.location.href='add-product.html'" aria-label="Add Product">
-                Add
-            </button>
-            <button class="button delete" type="button" value="Delete" onclick="window.location.href='delete-product.html'" aria-label="Delete Product">
-                Delete
-            </button>
-        </div>
+        <section id="main-wrapper">
+            <h2 class="centered-title">Manage Products</h2>
+            <table border="1">
+                <tr>
+                    <th class="centered">Product ID</th>
+                    <th class="centered" style="width: 300px;">Product Name</th>
+                    <th class="centered" style="width: 300px;">Product Description</th>
+                    <th class="centered">Product Image</th>
+                    <th class="centered">Single Product Cost</th>
+                    <th class="centered">Material ID</th>
+                    <th class="centered">Material Quantity</th>
+                    <th class="centered">Product Quantity</th>
+                    <th class="centered">Action</th>
+                </tr>
+                <tr>
+                    <td class="centered">001</td>
+                    <td class="centered">Cyber Truck</td>
+                    <td class="centered">This is a sample product description.</td>
+                    <td class="centered"><img src="/img/product/1.png" class="product-image"></td>
+                    <td class="centered">$10.00</td>
+                    <td class="centered">MAT004</td>
+                    <td class="centered">5</td>
+                    <td class="centered">5</td>
+                    <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                        <input class="buttonD" type="button" value="Delete" onclick="window.location.href='/staff/delete-product.html'"></td>
+                </tr>
+                <tr>
+                    <td class="centered" rowspan="2">002</td>
+                    <td class="centered" rowspan="2">Airplane</td>
+                    <td class="centered" rowspan="2">This is a sample product description.</td>
+                    <td class="centered" rowspan="2"><img src="/img/product/2.png" class="product-image"></td>
+                    <td class="centered" rowspan="2">$10.00</td>
+                    <td class="centered">MAT002</td>
+                    <td class="centered">5</td>
+                    <td class="centered" rowspan="2">5</td>
+                    <td class="centered" rowspan="2"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                        <input class="buttonD" type="button" value="Delete" onclick="window.location.href='/staff/delete-product.html'"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; height: 50px;">MAT005</td>
+                    <td style="text-align: center; height: 50px;">5</td>
+                </tr>
+                <tr>
+                    <td class="centered">003</td>
+                    <td class="centered">Rebot</td>
+                    <td class="centered">This is a sample product description.</td>
+                    <td class="centered"><img src="/img/product/3.png" class="product-image"></td>
+                    <td class="centered">$10.00</td>
+                    <td class="centered">MAT001</td>
+                    <td class="centered">5</td>
+                    <td class="centered">5</td>
+                    <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                        <input class="buttonD" type="button" value="Delete" onclick="window.location.href='/staff/delete-product.html'"></td>
+                </tr>
+                <tr>
+                    <td class="centered" rowspan="2">004</td>
+                    <td class="centered" rowspan="2">Spherical flying toy helicopter</td>
+                    <td class="centered" rowspan="2">This is a sample product description.</td>
+                    <td class="centered" rowspan="2"><img src="/img/product/4.png" class="product-image"></td>
+                    <td class="centered" rowspan="2">$10.00</td>
+                    <td class="centered">MAT001</td>
+                    <td class="centered">5</td>
+                    <td class="centered" rowspan="2">5</td>
+                    <td class="centered" rowspan="2"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                        <input class="buttonD" type="button" value="Delete" onclick="window.location.href='/staff/delete-product.html'"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; height: 50px;">MAT003</td>
+                    <td style="text-align: center; height: 50px;">5</td>
+                </tr>
+                <tr>
+                    <td class="centered">005</td>
+                    <td class="centered">Cat toy</td>
+                    <td class="centered">This is a sample product description.</td>
+                    <td class="centered"><img src="/img/product/5.png" class="product-image"></td>
+                    <td class="centered">$10.00</td>
+                    <td class="centered">MAT005</td>
+                    <td class="centered">5</td>
+                    <td class="centered">5</td>
+                    <td class="centered"><input class="buttonE" type="button" value="Edit" onclick="window.location.href='edit-product.html'">
+                        <input class="buttonD" type="button" value="Delete" onclick="window.location.href='/staff/delete-product.html'"></td>
+                </tr>
+            </table>
+
+            <div class="button-container">
+                <button class="button normal" type="button" value="Add" onclick="window.location.href='/staff/add-product.html'" aria-label="Add Product">
+                    Add
+                </button>
+            </div>
+        </section>
 
         <footer></footer>
 
         <script src="/script/script-general.js"></script>
-        <script src="/script/script-production.js"></script>
+        <script src="/script/script-manage-products.js"></script>
     </body>
 </html>

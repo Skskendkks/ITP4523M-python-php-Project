@@ -9,7 +9,7 @@
     margin-right: 20px;
     cursor: pointer;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button.sort:hover {
@@ -68,11 +68,13 @@
 table {
     margin: 0 auto;
     border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
 }
 
 .button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button-container input {
@@ -91,6 +93,29 @@ table {
     width: 100px;
     height: 100px;
 }
+
 body {
-    background-color: FFFFFF!important;
+    background-color: lightgrey;
+}
+
+h2.centered-title {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+img {
+    background-color: light;
+}
+
+td {
+    min-width: 150px;
+}
+
+th {
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+#main-wrapper {
+    height: 100vh;
 }
