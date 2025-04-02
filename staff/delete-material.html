@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-general.css">
+    <link rel="stylesheet" href="/styles/style-manage-products.css">
+    <title>Delete Material | Smile & Sunshine</title>
+    <style>
+        #main-wrapper {
+            height: 100vh;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header></header>
+    <nav></nav>
+
+    <section id="main-wrapper">
+        <div class="container">
+            <br/><br/>
+            <form>
+                <label style="margin-top: 20px;" for="disclaimer">The deletion of material is a permanent action that cannot be undone. Are you sure that you want to delete the material?</label>
+                <br/>
+                <input style="margin-top: 20px;" class="buttonD" type="button" value="Delete">
+                <input class="buttonE"type="reset" value="Cancel">
+            </form>
+            <table id="add-product" style="background-color:antiquewhite; margin-top: 20px;">
+                <tr>
+                    <td><label for="material-id">Material ID:</label></td>
+                    <td><input type="text" id="material-id" name="material-id" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-name">Material Name:</label></td>
+                    <td><input type="text" id="material-name" name="material-name" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-description">Material Description:</label></td>
+                    <td><input type="text" id="material-description" name="material-description" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-image">Material Image: (Max file size: 25 MB)</label><br><br></td>
+                    <td><input type="file" id="material-image" name="material-image" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="physical-quantity">Physical Quantity:</label></td>
+                    <td><input type="number" id="physical-quantity" name="physical-quantity" min="0" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-reserved-quantity">Reserved Quantity:</label></td>
+                    <td><input type="number" id="material-reserved-quantity" name="material-reserved-quantity" min="0" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for ="unit">Unit:</label></td>
+                    <td><input type="text" id="unit" name="unit" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="re-order-level">Re-order Level:</label></td>
+                    <td><input type="number" id="re-order-level" name="re-order-level" min="0" disabled><br><br></td>
+                </tr>
+                <tr>
+                    <td><input class="buttonE" type="submit" value="Submit"></td>
+                    <td><input class="buttonD"type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="/script/script-general.js"></script>
+    <script src="/script/script-manage-products.js"></script>
+
+    <body>
+
+</html>

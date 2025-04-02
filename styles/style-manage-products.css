@@ -119,3 +119,13 @@ th {
 #main-wrapper {
     height: 100vh;
 }
+
+#add-product {
+    width: 1000px;
+    border-radius: 5px;
+}
+
+#add-product th,
+#add-product td {
+    padding: 20px;
+}

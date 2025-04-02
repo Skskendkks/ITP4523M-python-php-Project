@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="/styles/style-manage-materials.css">
     <title>Add Material | Smile & Sunshine</title>
     <style>
-        .container {
-            height: 100vh;
-        }
     </style>
 </head>
 
@@ -18,35 +15,53 @@
 
     <header></header>
     <nav></nav>
-    <div class="container">
-        <h2 class="centered-title">Add material</h2><br> 
-        The material ID will auto assign by the system. <br><br> 
-        <form onload="return validateForm()">
-        <label for="material-name">Material Name:</label>
-        <input type="text" id="material-name" name="material-name" required><br><br>
-        <label for="Physical -quantity">Physical Quantity:</label>
-        <input type="number" id="Physical-quantity" name="Physical-quantity" required><br><br>
-        <label for="material-reserved-quantity">Reserved Quantity:</label>
-        <input type="number" id="material-reserved-quantity" name="material-reserved-quantity" required><br><br>
-        <label for ="unit">Unit:</label>
-        <input type="text" id="unit" name="unit" required><br><br>
-        <label for="re-order-level">Re-order Level:</label>
-        <input type="number" id="re-order-level" name="re-order-level" required><br><br>
-        <label for="material-image">Material Image: (Max file size: 25 MB)</label><br><br>
-        <input type="file" id="material-image" name="material-image" required><br><br>
-        <label for="material-description">Material Description:</label>
-        <input type="text" id="material-description" name="material-description" required><br><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-        </form>
-    </div>
 
+    <section id="main-wrapper">
+        <div class="container">
+            <h2 class="centered-title">Add Material</h2><br> 
+            <label style="margin-left: 110px; margin-bottom: 20px;">The material ID will auto assign by the system.</label>
+            <form onload="return validateForm()">
+                <table id="add-product" style="background-color:antiquewhite; margin-top: 20px;">
+                    <tr>
+                        <td><label for="material-name">Material Name:</label></td>
+                        <td><input type="text" id="material-name" name="material-name" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="material-description">Material Description:</label></td>
+                        <td><input type="text" id="material-description" name="material-description" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="material-image">Material Image: (Max file size: 25 MB)</label><br><br></td>
+                        <td><input type="file" id="material-image" name="material-image" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="physical-quantity">Physical Quantity:</label></td>
+                        <td><input type="number" id="physical-quantity" name="physical-quantity" min="0" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="material-reserved-quantity">Reserved Quantity:</label></td>
+                        <td><input type="number" id="material-reserved-quantity" name="material-reserved-quantity" min="0" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for ="unit">Unit:</label></td>
+                        <td><input type="text" id="unit" name="unit" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re-order-level">Re-order Level:</label></td>
+                        <td><input type="number" id="re-order-level" name="re-order-level" min="0" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><input class="buttonE" type="submit" value="Submit"></td>
+                        <td><input class="buttonD"type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
     <footer></footer>
 
     <script src="/script/script-general.js"></script>
     <script src="/script/script-manage-materials.js"></script>
     <body>
-    
-
 
 </html>

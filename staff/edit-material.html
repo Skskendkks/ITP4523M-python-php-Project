@@ -22,52 +22,53 @@
 
         <h2 class="centered-title">Edit material</h2><br>
 
-        <form onsubmit="return validateForm()"">
-            <label for="Order ID">Order ID:</label>
-            <input type="text" id="Order ID" name="Order ID" required><br><br>
-            <label for="material-name">Material Name:</label>
-            <input type="text" id="material-name" name="material-name" required><br><br>
-            <label for="product ID">Product ID:</label>
-            <input type="text" id="Product ID" name="Product ID" required><br><br>
-            <label for="Product Image">Product Image: (Max file size: 25 MB)</label>
-            <input type="file" id="product-image" name="product-image" required><br><br>
-            <label for="Order Quantity">Order Quantity:</label>
-            <input type="number" id="order-quantity" name="order-quantify" required><br><br>
-            <label for="Total Order Amount">Total Order Amount:</label>
-            <input type="number" id="total-order-amount" name="total-order-amount" required><br><br>
-            <label for="Customer Contact Name">Customer's Contact Name:</label>
-            <input type="text" id="customer-contact-name" name="customer-contact-name" required><br><br>
-            <label for="Customer Contact Number">Customer's Contact Number:</label>
-            <input type="text" id="customer-contact-number" name="customer-contact-number" required><br><br>
-            <label for="Delivery Address">Delivery Address:</label>
-            <input type="text" id="delivery-address" name="delivery-address" required><br><br>
-            <label for="Delivery Date">Delivery Date:</label>
-            <input type="date" id="delivery-date" name="delivery-date" required><br><br>
-            <input type="radio" name="Status" value="Accepted" required>
-            <label for="Accepted">Accepted</label>
-            <input type="radio" name="Status" value="Rejected" required>
-            <label for="Rejected">Rejected</label><br><br>
-            <label for="Material Name"> Material Name:</label>
-            <input type="text" id="Material Name" name="Material Name" required><br><br>
-            <label for="User material in the order">User material in the order:</label>
-            <input type="text" id="user-material-in-the-order" name="user-material-in-the-order" required><br><br>
-            <label for="Material Physical Quantity">Material Physical Quantity:</label>
-            <input for="number" id="material-physical-quantity" name="material-physical-quantity" required><br><br>
-            <label for="Material Available Quantity">Material Available Quantity:</label>
-            <input for="number" id="material-available-quantity" name="material-available-quantity" required><br><br>
-            <label for="Unit of the Material">Unit of the Material:</label>
-            <input type="text" id="unit-of-the-material" name="unit-of-the-material" required><br><br>
-            <label for="Material Low Stock Alert">Materail Low Stock Alert:</label>
-            <input type="number" id="material-low-stock-alert" name="material-low-stock-alert" required><br><br>
-            <input class="buttonE" type="submit" value="Submit">
-            <input class="buttonD" type="reset" value="Reset">
-        </from>
+        <form onsubmit="return validateForm()">
+            <table id="add-product" style="background-color:antiquewhite; margin-top: 20px;">
+                <tr>
+                    <td><label for="material-id">Material ID:</label></td>
+                    <td><input type="text" id="material-id" name="material-id" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-name">Material Name:</label></td>
+                    <td><input type="text" id="material-name" name="material-name" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-description">Material Description:</label></td>
+                    <td><input type="text" id="material-description" name="material-description" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-image">Material Image: (Max file size: 25 MB)</label><br><br></td>
+                    <td><input type="file" id="material-image" name="material-image" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="physical-quantity">Physical Quantity:</label></td>
+                    <td><input type="number" id="physical-quantity" name="physical-quantity" min="0" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="material-reserved-quantity">Reserved Quantity:</label></td>
+                    <td><input type="number" id="material-reserved-quantity" name="material-reserved-quantity" min="0" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for ="unit">Unit:</label></td>
+                    <td><input type="text" id="unit" name="unit" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="re-order-level">Re-order Level:</label></td>
+                    <td><input type="number" id="re-order-level" name="re-order-level" min="0" required><br><br></td>
+                </tr>
+                <tr>
+                    <td><input class="buttonE" type="submit" value="Save"></td>
+                    <td><input class="buttonD"type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
     </div>
-</body>
-<footer></footer>
+
+    <footer></footer>
 
 <script src="/script/script-general.js"></script>
 <script src="/script/script-manage-materials.js"></script>
 
+</body>
 
 </html>

@@ -94,10 +94,10 @@ table {
 
 
 th, td {
-    border: 1px solid black;
     margin: 1px;
     padding: 5px; /* Optional: to add some padding inside the cells */
 }
+
 
 h2.centered-title {
     margin-top: 20px;
@@ -107,10 +107,23 @@ h2.centered-title {
 
 td {
     min-width: 150px;
-    background-color: white;
 }
 
 th {
     padding: 20px;
     background-color: antiquewhite;
+}
+
+#main-wrapper {
+    height: 100vh;
+}
+
+#add-product {
+    width: 1000px;
+    border-radius: 5px;
+}
+
+#add-product th,
+#add-product td {
+    padding: 20px;
 }
