@@ -36,5 +36,5 @@ function resetSortList() {
 }
 
 function getOrderDetails(action) {
-  window.location.href = `/customer/view-order-details.html?action=${action}`;
+  window.location.href = `../customer/view-order-details.html?action=${action}`;
 }

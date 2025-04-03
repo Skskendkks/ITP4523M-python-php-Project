@@ -37,6 +37,6 @@ function resetSortList() {
 
 function getOrderDetails(action) {
     if (action != 'delete') {
-        window.location.href = `/staff/manage-orders-details.html?action=${action}`; // to be amended
+        window.location.href = `../staff/manage-orders-details.html?action=${action}`; // to be amended
     }
 }

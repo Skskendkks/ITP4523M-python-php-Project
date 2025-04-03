@@ -1,8 +1,6 @@
 //get the MySQL data from the database
-
-//get the material check box value form the Mysql database 
-
 //check the edit-product form is valid or not
+
 function validateForm() {
     const quantityInput = document.getElementById('product-quantity');
     const checkboxes = document.querySelectorAll('input[name="Material ID"]');
