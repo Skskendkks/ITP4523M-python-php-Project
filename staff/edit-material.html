@@ -5,8 +5,8 @@
     <base href="../">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style-general.css">
-    <link rel="stylesheet" href="/styles/style-manage-materials.css">
+    <link rel="stylesheet" href="styles/style-general.css">
+    <link rel="stylesheet" href="styles/style-manage-materials.css">
     <title>Edit Material | Smile & Sunshine</title>
     <style>
         .container {
@@ -21,13 +21,13 @@
 <body>
     <div class="container">
 
-        <h2 class="centered-title">Edit material</h2><br>
+        <h2 class="centered-title">Edit Material</h2><br>
 
         <form onsubmit="return validateForm()">
             <table id="add-product" style="background-color:antiquewhite; margin-top: 20px;">
                 <tr>
                     <td><label for="material-id">Material ID:</label></td>
-                    <td><input type="text" id="material-id" name="material-id" required><br><br></td>
+                    <td><input type="text" id="material-id" name="material-id" disabled><br><br></td>
                 </tr>
                 <tr>
                     <td><label for="material-name">Material Name:</label></td>
@@ -67,8 +67,8 @@
 
     <footer></footer>
 
-<script src="/script/script-general.js"></script>
-<script src="/script/script-manage-materials.js"></script>
+<script src="script/script-general.js"></script>
+<script src="script/script-manage-materials.js"></script>
 
 </body>
 
